@@ -129,7 +129,7 @@ public class CountryPickerView: NibView {
                 let selectedVc = tabVc.selectedViewController {
                 showCountriesList(from: selectedVc)
             } else {
-                let vc2 = vc.childViewControllers.last
+                let vc2 = vc.children.last
                 showCountriesList(from: vc2 ?? vc)
             }
         }
